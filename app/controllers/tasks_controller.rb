@@ -20,7 +20,7 @@ class TasksController < ApplicationController
       redirect_to root_url
     else
       flash.now[:danger] = 'タスクの追加に失敗しました。'
-      render new 
+      render 'tasks/new' 
     end
   end
 
